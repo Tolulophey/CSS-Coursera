@@ -60,13 +60,13 @@ h2{
 } */
 .left{
   float: left;
-  width: 15%;
+  width: 20%;
   background-color: #90996a;
   height: 650px;
 
 }
 .right{
-  width: 84%;
+  width: 79%;
   float: right;
   padding-top: 30px;
   /* background-color: grey; */
