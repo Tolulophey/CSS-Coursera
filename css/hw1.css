@@ -1,22 +1,24 @@
-body{
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  margin: 30px;
-  padding: 10px;
-  /* margin: 4%;
-  padding: 2%;
-  height: 100%; */
-  font-size: 150%;
+}
+body{
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #dbcbcb4d;
+  /* background-color: #dbcbcb4d; */
 }
 header{
   background: #25232445;
-  
   background-image: url(http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg);
   background-image: url(../images/flywheel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
+  width: 100%;
   padding: 20px;
   
 }
@@ -25,17 +27,22 @@ h1{
   color: #ffffff;
   text-transform: uppercase;
 }
-
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
 nav  a{
-  display: inline-block;
+  display: block;
   text-decoration: none;
   text-align: center;
   background-color: #dbcbcb4d;
   color: black;
   width: 20%;
-  height: 25px;
-  padding: 10px 0px;
-  margin: 0 15px 30px 15px;
+  height: 50px;
+  line-height: 50px;
   border: 1px solid #1b1919f2;
   border-radius: 5px;
 }
@@ -47,35 +54,71 @@ nav  a:hover{
 }
 
 h2{
-  margin: 0px;
   color: black;
+  margin-bottom: 10px;
   /* text-transform: uppercase; */
 }
-/* main{
-  display: inline;
-  justify-content: flex-start;
-  background-color: grey;
-} */
-/* main > .left, main > .right{
-  display: inline-block;
-} */
+main{
+  display: flex;
+  width: 100%;
+}
 .left{
-  float: left;
-  width: 20%;
+  width: 25%;
   background-color: #90996a;
-  height: 650px;
+  min-height: 100vh;
 
 }
 .right{
-  width: 79%;
-  float: right;
+  width: 75%;
   padding-top: 30px;
-  /* background-color: grey; */
-  padding-left: 1%;
+  padding-left: 5px;
 }
 img{
   display: block;
-  width: 200px;
+  width: 80%;
   margin: 30px auto; 
   border: 2px solid black;
+}
+.right p{
+  margin-bottom: 10px;
+}
+table{
+  width: 80%; 
+  margin: 10px auto;
+  height: 400px;
+  font-weight: 300;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 30px;
+  border-spacing: 3px; 
+}
+th{
+  border-bottom: 3px solid #b1e053;
+  border-radius: 5px 5px 0  0;
+  background-color: #92a757;
+  /* -webkit-background-color: ; */
+  /* background-image: linear-gradient(to right, #92a757, #92a252); */
+  padding:0 10px ;
+  color: #fff;
+}
+th:first-child{
+  text-align: left;
+}
+tr > td{
+  text-align: center;
+}
+tr > td:first-child{
+  text-align: left;
+  
+}
+tr:not(first-child){
+  opacity: 0.75;
+}
+tr:hover{
+  opacity: 1;
+}
+td{
+  padding-left: 5px;
+  color: #000;
+  border-radius: 2px;
+  background-color: #e4f5d4;
 }
